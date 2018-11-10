@@ -1,0 +1,46 @@
+PODS:
+  - iOSSnapshotTestCase (4.0.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 4.0.0)
+  - iOSSnapshotTestCase/Core (4.0.0)
+  - iOSSnapshotTestCase/SwiftSupport (4.0.0):
+    - iOSSnapshotTestCase/Core
+  - KIF (3.7.4):
+    - KIF/Core (= 3.7.4)
+  - KIF/Core (3.7.4)
+  - OHHTTPStubs/Core (6.1.0)
+  - OHHTTPStubs/Default (6.1.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (6.1.0)
+  - OHHTTPStubs/Swift (6.1.0):
+    - OHHTTPStubs/Default
+  - SwiftCheck (0.10.0)
+
+DEPENDENCIES:
+  - iOSSnapshotTestCase
+  - KIF
+  - OHHTTPStubs/Swift
+  - SwiftCheck
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - iOSSnapshotTestCase
+    - KIF
+    - OHHTTPStubs
+    - SwiftCheck
+
+SPEC CHECKSUMS:
+  iOSSnapshotTestCase: 711379b19f69a22c131527df862352c877c2773c
+  KIF: f3d01c109ee9d1cfe6b0f2bb2aa278e807e971e2
+  OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
+  SwiftCheck: 8a3c3638941467bc142d625f374a8409dd262ae8
+
+PODFILE CHECKSUM: 7c39c3ff8111eb0b026b5dd9301530ac306776b2
+
+COCOAPODS: 1.5.3
