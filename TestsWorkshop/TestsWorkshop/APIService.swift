@@ -1,7 +1,15 @@
 import Foundation
 
-class APIService {
+protocol APIService {
+    func get(callback: @escaping (Restaurants) -> Void)
+    func setVisited(_ visited: Bool,
+                    restaurant: Restaurant,
+                    callback: @escaping (Restaurant) -> Void)
+}
+
+class URLAPIService: APIService {
     enum Endpoints {
+        // https://tests-workshop.herokuapp.com
         var baseURL: URL { return URL(string: "http://localhost:4567")! }
 
         case getRestaurants

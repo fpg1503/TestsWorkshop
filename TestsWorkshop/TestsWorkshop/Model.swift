@@ -7,3 +7,15 @@ struct Restaurant: Codable {
 }
 
 typealias Restaurants = [Restaurant]
+
+class BusinessRule {
+
+    /// Iff restaurant is Mica add exclamation points
+    /// because Mica is nice!
+    func name(of restaurant: Restaurant) -> String {
+        if restaurant.name == "Mica" {
+            return restaurant.name + "!!!"
+        }
+        return restaurant.name
+    }
+}

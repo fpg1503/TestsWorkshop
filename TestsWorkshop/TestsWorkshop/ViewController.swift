@@ -1,9 +1,20 @@
 import UIKit
 
+// https://tests-workshop.herokuapp.com
+
 class ViewController: UITableViewController {
-    let apiService = APIService()
+    let apiService: APIService
     var restaurants: Restaurants = []
 
+    init(apiService: APIService = URLAPIService()) {
+        self.apiService = apiService
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
 
